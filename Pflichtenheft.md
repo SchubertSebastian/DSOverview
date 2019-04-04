@@ -1,17 +1,20 @@
 Schubert, Schickmair
 
-Pflichtenheft: Overview Digital Signage
+##Pflichtenheft: Overview Digital Signage
 
 Ausgangslage
-Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Es gibt die Zweige Medientechnik,
+Die HTL Leonding ist eine mittelgroÃŸe Schule im Zentralraum OÃ–. Es gibt die Zweige Medientechnik,
 Informatik, Elektronik und Medizintechnik.
+
 Ist-Situation
 An der HTL Leonding gibt es ein Digital Signage. Dies sind Bildschirme, auf denen verschiedene Layouts
-mit verschiedenen Inhalten gezeigt werden können.
-Dies wird mit Xibo organisiert, welches als Backend für das Digital Signage genützt wird.
+mit verschiedenen Inhalten gezeigt werden kÃ¶nnen.
+Dies wird mit Xibo organisiert, welches als Backend fÃ¼r das Digital Signage genÃ¼tzt wird.
+
 Problem
-Man hat keine Möglichkeit zu sehen was auf den einzelnen Displays gerade angezeigt wird.
+Man hat keine MÃ¶glichkeit zu sehen was auf den einzelnen Displays gerade angezeigt wird.
+
 Aufgabenstellung
-Es soll nun eine Website entwickelt werden die sozusagen als Übersicht – Overview für das Digital
+Es soll nun eine Website entwickelt werden die sozusagen als Ãœbersicht â€“ Overview fÃ¼r das Digital
 Signage dient. Auf dieser Website kann man sich von allen Displaygruppen das Layout ansehen und
 was gerade auf den einzelnen Displays angezeigt wird.

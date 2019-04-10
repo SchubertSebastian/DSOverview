@@ -11,27 +11,22 @@ Zurzeit haben wird an der Verbindung zu Xibo gearbeitet. Den dafür benötigten 
 
 <img src="20190410_093945.jpg" width="350" title="hover text">
 
-Leider spärte der Browser die Abfrage und wir bekamen kinen Access Token, Der Fehler war ein [ Cros origin error ], das ist eine schutzmasnahme von dem Browser um " Men in the middle Attacs " zu verhindern.
+Leider sperrte der Browser die Abfrage und wir bekamen keinen Access Token, Der Fehler war ein [ Cros origin error ], das ist eine Schutzmaßnahme vom Browser um eine "Men in the middle Attac" zu verhindern.
 
 <img src="20190410_094830.jpg" width="350" title="hover text"> 
 
-Nach einer langen Reschersche fanden wir heraus, dass das hinzufügen von [ dataTyp = "jsonp" ] das Problem "löst"
-Nun bekommen wir einen json object zurück. Es ist leider nur eine Fehlermeldung das keine Seite gefunden wurde.
+Nach einer langen Recherche fanden wir heraus, dass das Hinzufügen von [ dataTyp = "jsonp" ] das Problem "löst"
+Nun bekommen wir ein json Object zurück. Es kommt jedoch eine Fehlermeldung, dass keine Seite gefunden wurde.
 
 
 ### Postman
 
-Mit Postman generieren wir den Code für API-Calls. Wir haben ein Tutorial befolgt, um mit Postman auf die API zugreifen zu können. Weil wir eine [Collection] in Postman importiert haben, müssen wir den Code nicht selber schreiben. Wir müssen nur ergänzen, dass der responseType = json ist.
+Mit Postman generieren wir den Code für API-Calls. Wir haben ein Tutorial befolgt um mit Postman auf die API zugreifen zu können. Weil wir eine [Collection] in Postman importiert haben, müssen wir den Code nicht selber schreiben. Wir müssen nur ergänzen, dass der responseType = json ist.
 
 ### Webcomponens 
 
-Anstatt einer Ajax Abfrage mit JQeury haben Sie gesagt das wie Webcommponens verwenden sollen. Dewegen sind wir gerade dabei, die von Ihnen bereitgestelt Unterlagen zu studieren und zu lehrnen wie und was Webcommponens sind und wie man diese nutzt. 
- 
-### Lösung von Abfrage Problem
+Anstatt einer Ajax Abfrage mit JQeury werden wir jetzt Webcomponents verwenden.
+Hier sind wir gerade dabei die Unterlagen durchzugehen.
 
-Sie haben gesagt ,dass Sie eine Server erställen der die Abfrage übernimmt.
-Auf diesen müssen wir dann mit "unserem" zugreifen und die Daten zu der Webseite schicke
-Wir wollten aber alles mit JS lösen und haben des wegen keinen Server eingeplant.
-Also wollten wir fragen welchen wir nutzen sollen, um es für Sie anzupassen.
 
 

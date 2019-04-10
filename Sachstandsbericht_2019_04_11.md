@@ -5,10 +5,16 @@ Wir haben eine html Seite erstellt die später die von Xibo ausgelesenen Display
 
 <img src="20190410_093211.jpg" width="350" title="hover text"> 
 
-### Verbindung zu Xibo
+### Abruf der Daten von Xibo
 
-Zurzeit wird noch an der Verbindung zu Xibo gearbeitet. Den Code für den Zugriff auf die Xibo-API generieren wir mit Postman. Jedoch bekommen wir zurzeit keinen Access Token, weil der Browser den Zugriff auf Xibo nicht erlaubt, da er bereits mit nodejs verbunden ist.
-<img src="20190410_093945.jpg" width="350" title="hover text"> 
+Zurzeit haben wird an der Verbindung zu Xibo gearbeitet. Den dafür benötigten Code konnte man in Postman generieren lassen.
+
+<img src="20190410_093945.jpg" width="350" title="hover text">
+
+Leider spärte der Browser die Abfrage und wir bekamen kinen Access Token, Der Fehler war ein [ Cros origin error ], das ist eine schutzmasnahme von dem Browser um " Men in the middle Attacs " zu verhindern.
+
+
+ 
 
 <img src="20190410_094830.jpg" width="350" title="hover text"> 
 

@@ -2,12 +2,16 @@
 ### Zusammenfassung
 
 Wir haben eine html Seite erstellt die später die von Xibo ausgelesenen Displaygroups und Displays anzeigt.
-![image](https://github.com/C0rruptdeX/DSOverview/edit/master/20190410_093211.jpg)
+
 <img src="20190410_093211.jpg" width="350" title="hover text"> 
 
 ### Verbindung zu Xibo
 
 Zurzeit wird noch an der Verbindung zu Xibo gearbeitet. Den Code für den Zugriff auf die Xibo-API generieren wir mit Postman. Jedoch bekommen wir zurzeit keinen Access Token, weil der Browser den Zugriff auf Xibo nicht erlaubt, da er bereits mit nodejs verbunden ist.
+<img src="20190410_093945.jpg" width="350" title="hover text"> 
+
+<img src="20190410_094830.jpg" width="350" title="hover text"> 
+
 
 ### Postman
 

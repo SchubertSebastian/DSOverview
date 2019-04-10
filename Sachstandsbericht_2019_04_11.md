@@ -25,8 +25,13 @@ Mit Postman generieren wir den Code für API-Calls. Wir haben ein Tutorial be
 
 ### Webcomponens 
 
-erst for kurzem gesagt so machen . noch anschauen . flo msch text gut. thx 
+Anstatt einer Ajax Abfrage mit JQeury haben Sie gesagt das wie Webcommponens verwenden sollen. Dewegen sind wir gerade dabei, die von Ihnen bereitgestelt Unterlagen zu studieren und zu lehrnen wie und was Webcommponens sind und wie man diese nutzt. 
+ 
+### Lösung von Abfrage Problem
 
-
+Sie haben gesagt ,dass Sie eine Server erställen der die Abfrage übernimmt.
+Auf diesen müssen wir dann mit "unserem" zugreifen und die Daten zu der Webseite schicke
+Wir wollten aber alles mit JS lösen und haben des wegen keinen Server eingeplant.
+Also wollten wir fragen welchen wir nutzen sollen, um es für Sie anzupassen.
 
 

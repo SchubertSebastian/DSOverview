@@ -23,7 +23,7 @@ Nun bekommen wir ein json Object zurück. Es kommt jedoch eine Fehlermeldung, da
 
 Mit Postman generieren wir den Code für API-Calls. Wir haben ein Tutorial befolgt um mit Postman auf die API zugreifen zu können. Weil wir eine [Collection] in Postman importiert haben, müssen wir den Code nicht selber schreiben. Wir müssen nur ergänzen, dass der responseType = json ist.
 
-### Webcomponens 
+### Webcomponents 
 
 Anstatt einer Ajax Abfrage mit JQeury werden wir jetzt Webcomponents verwenden.
 Hier sind wir gerade dabei die Unterlagen durchzugehen.

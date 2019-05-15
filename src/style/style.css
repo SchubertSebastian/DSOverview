@@ -25,6 +25,7 @@ body{
   position:fixed;
   top:0px;
   left:0px;
+  z-index: 8;
 }
 
 #nav{
@@ -36,6 +37,7 @@ body{
   top:55px;
   left:0px;
   float:left;
+  z-index: 5;
 }
 
 .strich{
@@ -60,12 +62,13 @@ font-size: 13px;
 #content{
 
   width:900px;
-  height:100%;
 
   position:absolute;
   top:55px;
   left:280px;
-  flaot:right;
+  float:right;
+  z-index: 3;
+  
 }
 
 #content p{

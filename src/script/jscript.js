@@ -1,3 +1,6 @@
+const content = document.querySelector('.main-content');
+scrollnav.init(content);
+
 var form = new FormData();
 form.append("client_id", "zCS2m6epaKVM08EvSc5hfPA8dX0HmSa2P54RMyBV");
 form.append("client_secret", "7aX3R6xvKdcujTiHukBXHshpyjndeM54cCU3PQHmOooCD4TVA6i5brj2UUEa95GEZnq0NFnh84vywexn3GQeM6TFMBuPSbbVB0A246YiGKhMfWQ2OHpNlzDO2GtYNk8fueQv67CyJWwMSxOoLUB8gPqSMrqDsUNxc2CU8KpJacrDUSix78Qn6N3IolQvfRRIAlEyo07HB3RxOWdU11vNF6rZjp7zdCLZPDMVQUgpsO9E07Gv8F1TJ0DveiI22y");

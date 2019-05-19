@@ -13,19 +13,27 @@
         "tagId": 0,
         "tag": "string",
         "layoutIds": [
-          0
+          0,
+          1,
+          2
         ],
         "playlistIds": [
-          0
+          0,
+          1,
+          2
         ],
         "campaignIds": [
-          0
+          0,
+          1,
+          2
         ],
         "mediaIds": [
           0
         ],
         "displayGroupIds": [
-          0
+          0,
+          1,
+          2
         ]
       }
     ]

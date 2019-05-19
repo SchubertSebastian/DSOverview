@@ -8,13 +8,11 @@
     <title>DsOverview</title>
 
     <link rel="stylesheet"  href="style/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="script/jscript.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script/jsVue.js" charset="utf-8"></script>
-
-
-
 
   </head>
   <body>
@@ -39,11 +37,22 @@
     </div>
     <div id="content">
 
+  <div id="demo">
+        <form id="search">
+          Search <input name="query" v-model="searchQuery">
+        </form>
+        <demo-grid
+          :heroes="gridData"
+          :columns="gridColumns"
+          >
+        </demo-grid>
+  </div>
 
 
+      <!--
       <div style="margin-top:55px;" class="box">
       <p>Displaygroup</p>
-    <!--<div id="strich33"></div>-->
+    <!-<div id="strich33"></div>->
 
           <div style="float:left;" class="navtwo">
 
@@ -62,7 +71,7 @@
 
         <div class="box">
     <p>Displaygroup</p>
-    <!--<div id="strich33"></div>-->
+    <!-<div id="strich33"></div>->
 
          <div style="float:left;" class="navtwo">
 
@@ -80,7 +89,7 @@
 
        <div style="margin-bottom:900px;" class="box">
     <p>Displaygroup</p>
-    <!--<div id="strich33"></div>-->
+    <!-<div id="strich33"></div>->
 
         <div style="float:left;" class="navtwo">
 
@@ -95,7 +104,7 @@
 
       </div>
         </div>
-
+      -->
   </body>
 
   <script type="text/javascript">

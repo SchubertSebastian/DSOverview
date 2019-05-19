@@ -49,10 +49,23 @@ body{
   margin:60px 0px 0px 30px;
   background-color:#5B5C64;
   padding: 0px;
+  margin-top:14px;
 
 }
 
-.strich p{
+.strich1{
+
+  width:200px;
+  height:24px;
+  border: 2px solid #5B5C64;
+  border-radius:5px;
+  margin:60px 0px 0px 30px;
+  background-color:#5B5C64;
+  padding: 0px;
+
+}
+
+.strich p, .strich1 p {
   margin:4.5px 0px 0px 41px;
 font-size: 13px;
 
@@ -68,7 +81,7 @@ font-size: 13px;
   left:280px;
   float:right;
   z-index: 3;
-  
+
 }
 
 #content p{

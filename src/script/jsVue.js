@@ -1,7 +1,6 @@
-Vue.component('demo-grid', {
-  template: '#grid-template',
-  props: {
-    heroes: Array,
-    columns: Array,
-    filterKey: String
+new Vue({
+  el: '#root',
+  data: {
+    greeting: 'fuck you'
   }
+})

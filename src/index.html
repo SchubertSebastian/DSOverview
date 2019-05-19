@@ -14,6 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script/jsVue.js" charset="utf-8"></script>
 
+    <script src="script/scrollnav.min.umd.js"></script>
+
+
   </head>
   <body>
 
@@ -25,17 +28,7 @@
 
   </div>
 
-  <div id="nav">
-
-          <div class="strich"><p>Displaygroup</p></div>
-          <div style="width:200px;margin-top:14px;height:24px;border-color:#435884;background-color:#435884;" class="strich"><p>Displaygroup</p></div>
-          <div style="width:200px;margin-top:14px;height:24px;" class="strich"><p>Displaygroup</p></div>
-          <div style="width:200px;margin-top:14px;height:24px;" class="strich"><p>Displaygroup</p></div>
-
-          <!--<div style="width:183px;margin-top:160px;height:17px;background-color:#3A80DC;border-color:#3A80DC;" class="strich"></div>-->
-
-    </div>
-    <div id="content">
+  <div id="nav" class="scroll-nav">
 
     <div id="root">
       <div v-if=" 1 === 1">
@@ -49,57 +42,46 @@
       <p>Displaygroup</p>
     <!-<div id="strich33"></div>->
 
+    <div style="margin-top:55px;" class="box" id="scroll-nav__1" >
+        <p>Displaygroup</p>
           <div style="float:left;" class="navtwo">
-
             <h1>Display01</h1>
             <h1 style="margin-top:17px;width:100px;">Display02</h1>
             <h1 style="margin-top:17px;">Display03</h1>
             <h1 style="margin-top:17px;">Display04</h1>
           </div>
-
-
           <img style="margin:27px 0px 0px 50px;float:left;width:300px;"src="images/temp.jpg">
-
-        </div>
-
-
-
-        <div class="box">
-    <p>Displaygroup</p>
-    <!-<div id="strich33"></div>->
-
-         <div style="float:left;" class="navtwo">
-
-           <h1>Display01</h1>
-           <h1 style="margin-top:17px;width:100px;">Display02</h1>
-           <h1 style="margin-top:17px;">Display03</h1>
-           <h1 style="margin-top:17px;">Display04</h1>
-         </div>
-
-
-         <img style="margin:27px 0px 0px 50px;float:left;width:300px;height:180px;"src="images/temp2.jpg">
-
-       </div>
-
-
-       <div style="margin-bottom:900px;" class="box">
-    <p>Displaygroup</p>
-    <!-<div id="strich33"></div>->
-
-        <div style="float:left;" class="navtwo">
-
-          <h1>Display01</h1>
-          <h1 style="margin-top:17px;width:100px;">Display02</h1>
-          <h1 style="margin-top:17px;">Display03</h1>
-          <h1 style="margin-top:17px;">Display04</h1>
-        </div>
-
-
-        <img style="margin:27px 0px 0px 50px;float:left;width:300px;"src="images/temp.jpg">
-
       </div>
+
+
+      <div class="box" id="scroll-nav__2">
+          <p>Displaygroup</p>
+                <div style="float:left;" class="navtwo">
+                   <h1>Display01</h1>
+                   <h1 style="margin-top:17px;width:100px;">Display02</h1>
+                   <h1 style="margin-top:17px;">Display03</h1>
+                   <h1 style="margin-top:17px;">Display04</h1>
+                 </div>
+
+             <img style="margin:27px 0px 0px 50px;float:left;width:300px;height:180px;"src="images/temp2.jpg">
         </div>
-      -->
+
+
+        <div style="margin-bottom:900px;" class="box" id="scroll-nav__3">
+            <p>Displaygroup</p>
+                <div style="float:left;" class="navtwo">
+                  <h1>Display01</h1>
+                  <h1 style="margin-top:17px;width:100px;">Display02</h1>
+                  <h1 style="margin-top:17px;">Display03</h1>
+                  <h1 style="margin-top:17px;">Display04</h1>
+                </div>
+
+            <img style="margin:27px 0px 0px 50px;float:left;width:300px;"src="images/temp.jpg">
+        </div>
+
+
+    </div>
+
   </body>
 
   <script type="text/javascript">

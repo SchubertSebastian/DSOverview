@@ -28,13 +28,7 @@
 
   </div>
 
-  <div id="nav" class="scroll-nav">
-
-    <div id="root">
-      <div v-if=" 1 === 1">
-          green
-      </div>
-    </div>
+  <div id="nav" class="scroll-nav" >
 
 
       <!--
@@ -80,12 +74,21 @@
         </div>
 
 
-    </div>
+  -->  </div>
+
+  <div id="app">
+    <ol>
+
+      <todo-item
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+      ></todo-item>
+    </ol>
+  </div>
+
 
   </body>
 
-  <script type="text/javascript">
-
-  </script>
 
 </html>

@@ -1,3 +1,4 @@
+/*
 const content = document.querySelector('.main-content');
 scrollnav.init(content);
 
@@ -7,7 +8,6 @@ form.append("client_secret", "7aX3R6xvKdcujTiHukBXHshpyjndeM54cCU3PQHmOooCD4TVA6
 form.append("grant_type", "client_credentials");
 //form.append("accss_token", "PURm2F73GsPXcTD0ev7xv2Jz5dvgV0QtgoPbDoLL");
 
-/*
 var settings = {
   "async": true,
   "crossDomain": true,

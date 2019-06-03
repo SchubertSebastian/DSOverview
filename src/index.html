@@ -77,14 +77,18 @@
 
   -->  </div>
 
-  <div id="contant" style="margin-top: 100px; margin-left: 300px;">
 
+  <!--    https://github.com/axios/axios      daten holen -->
+
+
+  <div id="contant" style="margin-top: 100px; margin-left: 300px;">
+<!--
     <container
         v-for="input in input"
         v-bind:key="input.id"
         v-bind:input="input"
     ></container>
-
+-->
   </div>
 
 
@@ -92,19 +96,17 @@
 
 <script type="text/javascript">
 
+/*
+
 Vue.component('container', {
 props: ['input'],
 template: `
   <div class="container">
     <h3>{{ input.title }}</h3>
 
-    <ul>
-      <display
-        v-for= "item in dislist"
-        v-bind:dis="item"
-        v-bind:key="item.id"
-      ></display>
-    </ul>
+    <ol>
+
+    </ol>
 
     <div v-html="input.content"></div>
   </div>
@@ -122,21 +124,7 @@ var contain = new Vue({
   }
 })
 
-Vue.component('display', {
-  props: ['dis'],
-  template: '<li>{{ dis.text }}</li>'
-})
 
-var disVue = new Vue({
-  el: '.container',
-  data: {
-    dislist: [
-      { id: 0, text: 'Vegetables' },
-      { id: 1, text: 'Cheese' },
-      { id: 2, text: 'Whatever else humans are supposed to eat' }
-    ]
-  }
-})
 
 
   </script>

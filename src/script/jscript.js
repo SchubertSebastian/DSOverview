@@ -30,20 +30,3 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 */
-
-
-
-
-//   javascript Lösung
-
-for (var i = 0; i < 3; i++) {
-  var container = document.createElement("DIV");
-
-  for (var i = 0; i < 3; i++) {
-    
-  }
-
-  document.getElementById('contant').appendChild(dv)
-
-
-}

@@ -1,15 +1,30 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    
+  <div class="group" >
+    <div v-for="item in items">
+      <h1>{{item.displayGroup}}</h1>
+
+      <Display />
+    </div>
   </div>
 </template>
 
 <script>
+import Display from './Display.vue'
+
+import gj from '../testjson/testgroup.json'
+
 export default {
-  name: 'HelloWorld',
+  name: 'GroupBox',
+  components: {
+    Display
+  },
   props: {
     msg: String
+  },
+  data () {
+    return {
+			items: gj
+    }
   }
 }
 </script>

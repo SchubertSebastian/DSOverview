@@ -1,15 +1,29 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    
+  <div class="display">
+
+    <div v-for="item in items" v-if="item.displayGroupId==1">
+      <p>{{item.display}}</p>
+    </div>
+
   </div>
 </template>
 
 <script>
+
+import dj from '../testjson/display.json'
+
 export default {
-  name: 'HelloWorld',
+  name: 'Display',
   props: {
-    msg: String
+
+  },
+  data () {
+    return {
+			items: dj
+    }
+  },
+  methods: {
+
   }
 }
 </script>

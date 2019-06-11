@@ -1,7 +1,6 @@
 <template>
-  <div class="head">
+  <div class="nav">
 
-    <p style="float:left;">&#124;&nbsp; DsOverview</p>
  
   </div>
 </template>
@@ -9,7 +8,7 @@
 <script>
 
 export default {
-  name: 'Head',
+  name: 'Nav',
   props: {
     msg: String
   }
@@ -18,18 +17,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .head {
-   
-  width:100%;
-  height:55px;
-  background-color:#3D3E43;
-  z-index:9;
+  .nav {
+  
+  width:280px;
+  height:100%;
+  background-color:#494A50;
   position:fixed;
-  top:0px;
+  top:55px;
   left:0px;
+  float:left;
+
   }
 
-  .head p{
+  .nav p{
 
   font-family: 'Montserrat', sans-serif;
   color:white;

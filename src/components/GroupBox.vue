@@ -44,7 +44,7 @@ export default {
 
   float:right;
   margin-top: 90px;
-  margin-right:19%;
+  margin-left:19%;
   padding: 60px;
   }
 

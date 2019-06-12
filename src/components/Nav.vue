@@ -73,7 +73,7 @@ export default {
   color:white;
   font-size:14px;
   font-weight: lighter;
-  margin:50px 0px 30px 40px;
+  margin:50px 0px 30px 22px;
   letter-spacing: 2.3px;
 
 

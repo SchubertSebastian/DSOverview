@@ -60,5 +60,37 @@
         ]
       }
     ]
+  },
+  {
+    "displayGroupId": 3,
+    "displayGroup": "Xibo TestGroup2",
+    "description": "string",
+    "isDisplaySpecific": 0,
+    "isDynamic": 0,
+    "dynamicCriteria": "string",
+    "dynamicCriteriaTags": "string",
+    "userId": 0,
+    "tags": [
+      {
+        "tagId": 0,
+        "tag": "string",
+        "layoutIds": [
+          0
+        ],
+        "playlistIds": [
+          0
+        ],
+        "campaignIds": [
+          0
+        ],
+        "mediaIds": [
+          0
+        ],
+        "displayGroupIds": [
+          0
+        ]
+      }
+    ]
   }
+
 ]

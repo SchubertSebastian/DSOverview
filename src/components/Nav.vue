@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-
+  <h2>Displaygroups</h2>
     <div class="groupF" v-for="item in items">
       <h3>{{item.displayGroup}}</h3>
     </div>
@@ -41,10 +41,23 @@ export default {
 
   .groupF {
     margin: 10px 0px;
-    border-radius: 10px;
-    border: 2px solid black;
+    border-radius: 5px;
+    border: 2px solid #F08629;
+    color:white;
+    background-color:#F08629;
+    font-weight:lighter;
+    font-size: 14px;
+    text-align: center;
+    width:75%;
+    margin:auto;
+    margin-top: 20px;
   }
 
+.groupF h3{
+
+
+  font-weight: lighter;
+}
   .nav p{
 
   font-family: 'Montserrat', sans-serif;
@@ -52,4 +65,18 @@ export default {
   margin:17px 0px 0px 80px;
   font-size:20px;
   }
+
+  h2{
+
+
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size:14px;
+  font-weight: lighter;
+  margin:50px 0px 30px 40px;
+  letter-spacing: 2.3px;
+
+
+  }
+
 </style>

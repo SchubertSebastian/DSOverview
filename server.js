@@ -46,6 +46,7 @@ app.post("/token", urlencodedParser, function(req, res) {
     var json = JSON.parse(body);
     token = json.access_token;
     //console.log(token);
+    //res.end();
   });
 });
 
@@ -75,11 +76,42 @@ app.get('/display', function (req, res) {
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
 
-    console.log(body);
-    //res.send('hi');
+    //console.log(body);
+    res.send(body);
   });
 
 });
+
+app.get('/group', function (req, res) {
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://localhost/api/displaygroup',
+    headers:
+     { 'cache-control': 'no-cache',
+       Connection: 'keep-alive',
+       'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW',
+       'accept-encoding': 'gzip, deflate',
+       cookie: 'PHPSESSID=3pgnmkeee0h4oukerueg8voi91',
+       Host: 'localhost',
+       'Postman-Token': '6fcc05fe-5f5e-4527-b747-5753c20819e8,86209b62-0ee9-41ef-8bc7-cebab98d074a',
+       'Cache-Control': 'no-cache',
+       Accept: '*/*',
+       Authorization: 'Bearer '  + token},
+    formData:
+     { client_id: 'HlaChTftiO8wh8GI1jDfgcy7TBrsq0OupKIl0XyA',
+       client_secret: 'B2JGYVKpWUiBlduAU6R6W2GCCBDI4VKNKgMVkDBpxoshAAi3VidcA1CyUc8Aeyc0gQXNBLD1qYrqWaH2BWKUN8Dlb6JdDa41JHp5xrq91F8MR27UbwiWZYnmYtWhjRXgknp7m6A4j9aTr47W1oiYzgpkcoWSCqLI2JWTEELcYiqmXxkgH0xFsjfPTAoHUrrluyZ1olIAUkri1Mc0pKQKu0vSoqgzNiI9CCBnivJT7asadVCSN7jjEiH1oX9i19',
+       grant_type: 'client_credentials' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    //console.log(body);
+    res.send(body);
+  });
+
+});
+
 
 app.post('/', function (req, res) {
    console.log("Got a POST request for the homepage");

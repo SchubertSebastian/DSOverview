@@ -3,7 +3,8 @@
     <div class="box" v-for="item in items">
       <h1>{{item.displayGroup}}</h1>
 
-      <Display />
+
+      <Display :id="item.displayGroupId"/>
     </div>
   </div>
 </template>
@@ -33,14 +34,14 @@ export default {
 <style scoped>
 
 .box{
-  
+
   border:black 2.5px solid;
   width:600px;
   border-radius: 8px;
-  margin:0px 0px 30px 0px; 
+  margin:0px 0px 30px 0px;
 }
 .group{
-  
+
   float:right;
   margin-top: 90px;
   margin-right:19%;

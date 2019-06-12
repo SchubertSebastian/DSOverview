@@ -1,7 +1,7 @@
 <template>
   <div class="display">
 
-    <div v-for="item in items" v-if="item.displayGroupId==1">
+    <div v-for="item in items" v-if="item.displayGroupId==id">
       <p>{{item.display}}</p>
     </div>
 
@@ -15,7 +15,7 @@ import dj from '../testjson/display.json'
 export default {
   name: 'Display',
   props: {
-
+    id: String
   },
   data () {
     return {
@@ -48,7 +48,7 @@ a {
 p{
 
   color:white;
-  
+
   /*margin:28px 0px 0px 50px;*/
   font-size:14px;
   background-color:#435884;

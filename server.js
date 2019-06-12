@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
 
+var token;
+
 // Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -40,13 +42,43 @@ app.post("/token", urlencodedParser, function(req, res) {
   request(options, function(error, response, body) {
     if (error) throw new Error(error);
 
-    console.log(body);
+    //console.log(body);
+    var json = JSON.parse(body);
+    token = json.access_token;
+    //console.log(token);
   });
 });
 
 
+
 app.get('/display', function (req, res) {
-   res.send('hi');
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://localhost/api/display',
+    headers:
+     { 'cache-control': 'no-cache',
+       Connection: 'keep-alive',
+       'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW',
+       'accept-encoding': 'gzip, deflate',
+       cookie: 'PHPSESSID=3pgnmkeee0h4oukerueg8voi91',
+       Host: 'localhost',
+       'Postman-Token': '8138a942-c6b3-4388-98fc-d546b7d91253,4f3de4d4-7ac0-4bad-884f-44eef1fa1dbd',
+       'Cache-Control': 'no-cache',
+       Accept: '*/*',
+       Authorization: 'Bearer ' + token },
+    formData:
+     { client_id: 'HlaChTftiO8wh8GI1jDfgcy7TBrsq0OupKIl0XyA',
+       client_secret: 'B2JGYVKpWUiBlduAU6R6W2GCCBDI4VKNKgMVkDBpxoshAAi3VidcA1CyUc8Aeyc0gQXNBLD1qYrqWaH2BWKUN8Dlb6JdDa41JHp5xrq91F8MR27UbwiWZYnmYtWhjRXgknp7m6A4j9aTr47W1oiYzgpkcoWSCqLI2JWTEELcYiqmXxkgH0xFsjfPTAoHUrrluyZ1olIAUkri1Mc0pKQKu0vSoqgzNiI9CCBnivJT7asadVCSN7jjEiH1oX9i19',
+       grant_type: 'client_credentials' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+    //res.send('hi');
+  });
+
 });
 
 app.post('/', function (req, res) {

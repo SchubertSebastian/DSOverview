@@ -15,7 +15,7 @@ import dj from '../testjson/display.json'
 export default {
   name: 'Display',
   props: {
-    id: String
+    id: Number
   },
   data () {
     return {

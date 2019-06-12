@@ -45,7 +45,7 @@ app.post("/token", urlencodedParser, function(req, res) {
     //console.log(body);
     var json = JSON.parse(body);
     token = json.access_token;
-    //console.log(token);
+    console.log(token);
     //res.end();
   });
 });

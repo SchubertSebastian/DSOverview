@@ -3,8 +3,23 @@
   <h2>Displaygroups</h2>
     <div class="groupF" v-for="item in items">
       <h3>{{item.displayGroup}}</h3>
-    </div>
 
+      
+    </div>
+    
+    <div id="get">
+    <form class="ga" action = "http://172.18.154.56:8081/token" method = "POST">
+         <input type = "submit" value = "Get Access Token">
+      </form>
+
+      <form action = "http://172.18.154.56:8081/display" method = "GET">
+         <input type = "submit" value = "Get Display">
+      </form>
+
+      <form action = "http://172.18.154.56:8081/group" method = "GET">
+         <input type = "submit" value = "Get Group">
+      </form>
+      </div>
   </div>
 </template>
 
@@ -27,6 +42,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  
+  
+  .ga{margin-top:200px;}
+  
   .nav {
 
   width:280px;
@@ -51,6 +70,7 @@ export default {
     width:75%;
     margin:auto;
     margin-top: 20px;
+    
   }
 
 .groupF h3{

@@ -11,7 +11,7 @@ Die Website DS_Overview dient als Übersicht - "Overview" für das Digital Signa
 
 ## Project setup
 ```
-npm install
+npm install vue
 ```
 
 ### Compiles and hot-reloads for development

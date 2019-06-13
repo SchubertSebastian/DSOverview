@@ -77,8 +77,18 @@ app.get('/display', function (req, res) {
     if (error) throw new Error(error);
 
     //console.log(body);
-    res.send(body);
+    //res.send(body);
+  const fs = require('fs');
+  fs.writeFile("src/xibojson/display.json", body , function(err) {
+      if(err) {
+          return console.log(err);
+      }
+
+      console.log("The file was saved!");
   });
+  });
+
+
 
 });
 
@@ -107,7 +117,15 @@ app.get('/group', function (req, res) {
     if (error) throw new Error(error);
 
     //console.log(body);
-    res.send(body);
+    //res.send(body);
+    const fs = require('fs');
+    fs.writeFile("src/xibojson/group.json", body , function(err) {
+        if(err) {
+            return console.log(err);
+        }
+
+        console.log("The file was saved!");
+    });
   });
 
 });

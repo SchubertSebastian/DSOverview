@@ -52,10 +52,10 @@ p{
   /*margin:28px 0px 0px 50px;*/
   font-size:14px;
   background-color:#435884;
-  width:100px;
-  padding:8px 15px 4px 8px;
+  width:120px;
+  padding:4px 15px 4px 15px;
   margin:10px 0px 8px 20px;
-
+text-align: center;
   border: 2px solid #435884;
   border-radius:7px;
   font-weight:lighter;

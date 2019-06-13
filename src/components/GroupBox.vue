@@ -42,10 +42,11 @@ export default {
 }
 .group{
 
-  float:right;
+  float:left;
   margin-top: 90px;
-  margin-left:19%;
+  margin-left:320px;
   padding: 60px;
+  position:relative;
   }
 
 

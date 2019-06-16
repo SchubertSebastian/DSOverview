@@ -2,15 +2,15 @@
   <div class="display">
 
     <div v-for="item in items" v-if="item.displayGroupId==id">
-      <p>{{item.display}}</p>
+      <p>&#9492;				Display: <span>{{item.display}}</span></p>
     </div>
-
+<!--&#8735;  &#8990;-->
   </div>
 </template>
 
 <script>
 
-import dj from '../testjson/display.json'
+import dj from '../xibojson/display.json'
 
 export default {
   name: 'Display',
@@ -46,18 +46,27 @@ a {
 }
 
 p{
+margin-left:230px;
+ margin-bottom:20px;
+ margin-top:6px;
+ 
+ 
+}
 
-  color:white;
+p span{
+
+
+ color:white;
 
   /*margin:28px 0px 0px 50px;*/
   font-size:14px;
   background-color:#435884;
   width:120px;
   padding:4px 15px 4px 15px;
-  margin:10px 0px 8px 20px;
-text-align: center;
+  margin:10px 0px 8px 4px;
+  text-align: center;
   border: 2px solid #435884;
   border-radius:7px;
-  font-weight:lighter;
+
 }
 </style>

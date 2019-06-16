@@ -4,19 +4,18 @@
     <div class="groupF" v-for="item in items">
       <h3>{{item.displayGroup}}</h3>
 
-      
     </div>
     
     <div id="get">
-    <form class="ga" action = "http://172.18.154.56:8081/token" method = "POST">
+    <form class="ga" action = "http://172.18.154.116:8081/token" method = "POST">
          <input type = "submit" value = "Get Access Token">
       </form>
 
-      <form action = "http://172.18.154.56:8081/display" method = "GET">
+      <form action = "http://172.18.154.116:8081/display" method = "GET">
          <input type = "submit" value = "Get Display">
       </form>
 
-      <form action = "http://172.18.154.56:8081/group" method = "GET">
+      <form action = "http://172.18.154.116:8081/group" method = "GET">
          <input type = "submit" value = "Get Group">
       </form>
       </div>
